@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "schema": "https://schema-examples.com/dynamic-yield-affinity-integration/example-banner"
+  },
+  "headline": "Explore our own-brand collection",
+  "body": "A banner selected by a consuming personalization runtime.",
+  "targeting": {
+    "affinityBrand": [
+      {
+        "_meta": {
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        "id": "brand-own",
+        "contentType": "https://schema-examples.com/dynamic-yield-affinity-integration/affinity-value"
+      }
+    ]
+  }
+}

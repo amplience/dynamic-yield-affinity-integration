@@ -1,0 +1,14 @@
+{
+  "_meta": {
+    "schema": "https://schema-examples.com/dynamic-yield-affinity-integration/content-container"
+  },
+  "content": [
+    {
+      "_meta": {
+        "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+      },
+      "id": "banner-own-brand",
+      "contentType": "https://schema-examples.com/dynamic-yield-affinity-integration/example-banner"
+    }
+  ]
+}
