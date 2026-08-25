@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schema-examples.com/dynamic-yield-affinity-integration/targeting",
+  "definitions": {
+    "targeting": {
+      "title": "Dynamic Yield targeting",
+      "description": "Illustrative targeting dimensions backed by Amplience hierarchy items.",
+      "type": "object",
+      "properties": {
+        "affinityBrand": {
+          "title": "Affinity: Brand",
+          "description": "Select the brand affinity values that apply to this content.",
+          "type": "array",
+          "maxItems": 100,
+          "ui:extension": {
+            "name": "hierarchy-chooser",
+            "params": {
+              "deliveryKey": "dynamic-yield/affinities/brand",
+              "type": "chip"
+            }
+          },
+          "items": {
+            "allOf": [
+              {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+              },
+              {
+                "properties": {
+                  "contentType": {
+                    "enum": [
+                      "https://schema-examples.com/dynamic-yield-affinity-integration/affinity-value"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "affinityGender": {
+          "title": "Affinity: Gender",
+          "description": "Select the gender affinity values that apply to this content.",
+          "type": "array",
+          "maxItems": 100,
+          "ui:extension": {
+            "name": "hierarchy-chooser",
+            "params": {
+              "deliveryKey": "dynamic-yield/affinities/gender",
+              "type": "chip"
+            }
+          },
+          "items": {
+            "allOf": [
+              {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+              },
+              {
+                "properties": {
+                  "contentType": {
+                    "enum": [
+                      "https://schema-examples.com/dynamic-yield-affinity-integration/affinity-value"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "targetingLifecycleStage": {
+          "title": "Targeting: Lifecycle stage",
+          "description": "Select the lifecycle stages that apply to this content.",
+          "type": "array",
+          "maxItems": 100,
+          "ui:extension": {
+            "name": "hierarchy-chooser",
+            "params": {
+              "deliveryKey": "dynamic-yield/targeting/lifecycle-stage",
+              "type": "chip"
+            }
+          },
+          "items": {
+            "allOf": [
+              {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+              },
+              {
+                "properties": {
+                  "contentType": {
+                    "enum": [
+                      "https://schema-examples.com/dynamic-yield-affinity-integration/affinity-value"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "propertyOrder": [
+        "affinityBrand",
+        "affinityGender",
+        "targetingLifecycleStage"
+      ]
+    }
+  }
+}
