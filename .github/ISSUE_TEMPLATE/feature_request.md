@@ -1,27 +1,27 @@
 ---
-name: Feature Request
-about: Suggest a new feature or enhancement
-title: '[FEATURE] '
+name: Feature request
+about: Propose a schema, validation, or documentation improvement
+title: "[Feature] "
 labels: enhancement
-assignees: ''
+assignees: ""
 ---
 
-## Feature Description
+## Problem
 
-<!-- A clear and concise description of the feature you'd like -->
+<!-- What portable use case is not covered today? -->
 
-## Problem Statement
+## Proposed change
 
-<!-- What problem does this feature solve? -->
+<!-- Describe the schema or documentation interface you propose. -->
 
-## Proposed Solution
+## Compatibility
 
-<!-- How do you think this should work? -->
+<!-- Would schema IDs, property names, delivery keys, or existing content change? -->
 
-## Alternatives Considered
+## Alternatives considered
 
-<!-- Any alternative solutions or features you've considered -->
+<!-- What other approaches did you evaluate? -->
 
-## Additional Context
+## Documentation basis
 
-<!-- Any other context, mockups, or screenshots about the feature request -->
+<!-- Link to relevant official Amplience or Dynamic Yield documentation. -->

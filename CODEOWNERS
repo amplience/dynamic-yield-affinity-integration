@@ -1,15 +1,1 @@
-# CODEOWNERS - Define code owners for automatic review requests
-# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
-
-# Default owners for everything in the repo
-* @org/maintainers
-
-# Example: Specific paths can have different owners
-# /src/api/        @org/backend-team
-# /src/frontend/   @org/frontend-team
-# /docs/           @org/docs-team
-# /infrastructure/ @org/platform-team
-
-# Critical files requiring senior review
-# /.github/        @org/platform-team
-# /security/       @org/security-team
+* @amplience/developers

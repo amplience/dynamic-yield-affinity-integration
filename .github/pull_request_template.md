@@ -1,33 +1,38 @@
-## Description
+# Pull request
 
-<!-- Briefly describe the changes in this PR -->
+## Summary
 
-## Type of Change
+<!-- Describe the outcome and why it is needed. -->
 
-- [ ] Bug fix (non-breaking change that fixes an issue)
-- [ ] New feature (non-breaking change that adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to change)
-- [ ] Documentation update
-- [ ] Refactoring (no functional changes)
+## Change type
 
-## Related Issues
+- [ ] Schema interface
+- [ ] Validation or CI
+- [ ] Documentation
+- [ ] Repository maintenance
+- [ ] Release
 
-<!-- Link to any related issues: Fixes #123, Closes #456 -->
+## Validation
 
-## Testing
+- [ ] `npm run lint`
+- [ ] `npm test`
+- [ ] New or changed schema behavior has fixture coverage
+- [ ] Local Markdown links resolve
 
-<!-- Describe how you tested these changes -->
+## Amplience smoke test
 
-- [ ] Unit tests added/updated
-- [ ] Integration tests added/updated
-- [ ] Manual testing completed
+- [ ] Not required; the change cannot affect Amplience behavior
+- [ ] Required and completed in a non-production hub
+- [ ] Required and pending
 
-## Checklist
+Evidence or reason:
 
-- [ ] My code follows the project's coding standards
-- [ ] I have performed a self-review of my code
-- [ ] I have commented my code where necessary
-- [ ] I have updated documentation as needed
-- [ ] My changes generate no new warnings
-- [ ] All new and existing tests pass
-- [ ] I have signed my commits (if required)
+<!-- Record a sanitized result. Do not include credentials or private tenant data. -->
+
+## Compatibility and public-release review
+
+- [ ] Schema ID, property, delivery-key, and content migration impact is described
+- [ ] Claims and setup steps were checked against official documentation
+- [ ] No credentials, personal data, private tenant IDs, or proprietary assets are included
+- [ ] Documentation and changelog are updated where needed
+- [ ] Commits are signed as required by repository rules
