@@ -6,6 +6,10 @@ This repository is a reference set of Amplience Dynamic Content schemas for
 attaching Dynamic Yield affinity and targeting metadata to content. It provides
 an authoring model, not an end-to-end personalization runtime.
 
+Authors select affinity values directly on content in Dynamic Content, so a
+consuming implementation can serve relevant content on any channel it already
+delivers to, without a second targeting system to keep in sync.
+
 The three included targeting dimensions—brand affinity, gender affinity, and
 lifecycle stage—are illustrative. Adapt them to the attributes and exact values
 available in your Dynamic Yield profile configuration.
@@ -58,10 +62,11 @@ and contains no credentials.
 
 ## Prerequisites
 
-- An Amplience Dynamic Content hub with permission to create schemas, register
-  content types and extensions, and create and publish content.
+- An Amplience Dynamic Content hub and a user with permission to create schemas,
+  register content types and extensions, and create and publish content.
 - Dynamic Yield Experience OS and a confirmed list of affinity or targeting
-  dimensions and values for your implementation.
+  dimensions and values for your implementation. If you do not have these
+  values, your Dynamic Yield technical account manager can supply them.
 - Content Delivery v2 provisioned and enabled on the Amplience hub if you use the
   verification request shown below.
 - Node.js 22 and npm only if you want to run the repository checks locally.
