@@ -1,32 +1,40 @@
-# Contributing Guide
+# Contributing
 
-## Branch Naming Convention
+Thank you for helping improve this schema starter.
 
-Use the following prefixes for branches:
+## Before you start
 
-- `feature/` - New features
-- `bugfix/` - Bug fixes
-- `hotfix/` - Urgent production fixes
-- `chore/` - Maintenance tasks
-- `docs/` - Documentation updates
+- Search existing issues and pull requests before opening a duplicate.
+- Open an issue first for a substantial schema-interface change.
+- Never include credentials, personal data, private hub identifiers, or
+  proprietary customer schemas and screenshots.
+- Follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
-Example: `feature/add-user-authentication`
+## Make a change
 
-## Commit Guidelines
+1. Fork the repository and create a branch from `main`.
+2. Use one of the allowed prefixes: `feature/`, `bugfix/`, `hotfix/`, `chore/`,
+   `docs/`, or `release/`.
+3. Install dependencies with `npm ci`.
+4. Make the smallest coherent change and update the README or fixtures when the
+   schema interface changes.
+5. Run `npm run lint` and `npm test`.
+6. Open a pull request using the repository template.
 
-- Write clear, concise commit messages
-- Use present tense ("Add feature" not "Added feature")
-- Sign your commits if required by the repository
+Use concise, imperative commit subjects. Sign commits when required by the
+repository rules.
 
-## Pull Request Process
+## Schema changes
 
-1. Create a branch from `main` following the naming convention above
-2. Make your changes and push your branch
-3. Open a pull request and complete the PR template
-4. Request review from appropriate code owners
-5. Address all review comments
-6. Ensure all CI checks pass before merging
+Schema IDs and property names are public interfaces. In a pull request that
+changes them, describe migration impact and whether the change is breaking.
 
-## Code of Conduct
+Keep the targeting partial definitions-only. New remote references, extension
+dependencies, targeting dimensions, or delivery keys must be documented and
+covered by validation. For behavior that depends on Amplience, include the
+result of a non-production smoke test.
 
-Please be respectful and constructive in all interactions.
+## License
+
+By submitting a contribution, you agree that it will be licensed under the
+repository's [Apache License 2.0](LICENSE).

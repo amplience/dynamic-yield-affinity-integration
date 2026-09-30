@@ -1,39 +1,39 @@
 ---
-name: Bug Report
-about: Report a bug to help us improve
-title: '[BUG] '
+name: Bug report
+about: Report an error in a schema, check, or document
+title: "[Bug] "
 labels: bug
-assignees: ''
+assignees: ""
 ---
 
-## Bug Description
+## Summary
 
-<!-- A clear and concise description of the bug -->
+<!-- Describe the problem without including credentials or private tenant data. -->
 
-## Steps to Reproduce
+## Affected file or schema
 
-1. 
-2. 
-3. 
+<!-- Include the path and schema ID when relevant. -->
 
-## Expected Behavior
+## Steps to reproduce
 
-<!-- What you expected to happen -->
+1.
+2.
+3.
 
-## Actual Behavior
+## Expected result
 
-<!-- What actually happened -->
+<!-- What should have happened? -->
+
+## Actual result
+
+<!-- Include a sanitized validation or Amplience error. -->
 
 ## Environment
 
-- OS: 
-- Version: 
-- Browser (if applicable): 
+- Repository version or commit:
+- Node.js version, if relevant:
+- Amplience environment, if relevant: non-production / production / not used
 
-## Screenshots
+## Additional context
 
-<!-- If applicable, add screenshots to help explain the problem -->
-
-## Additional Context
-
-<!-- Any other context about the problem -->
+<!-- Add sanitized logs or screenshots if they help. -->

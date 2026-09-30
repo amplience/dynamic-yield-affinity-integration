@@ -1,0 +1,21 @@
+{
+  "affinityBrand": [
+    {
+      "_meta": {
+        "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+      },
+      "id": "brand-own",
+      "contentType": "https://schema-examples.com/dynamic-yield-affinity-integration/affinity-value"
+    }
+  ],
+  "affinityGender": [],
+  "targetingLifecycleStage": [
+    {
+      "_meta": {
+        "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+      },
+      "id": "lifecycle-loyalty",
+      "contentType": "https://schema-examples.com/dynamic-yield-affinity-integration/affinity-value"
+    }
+  ]
+}

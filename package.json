@@ -1,0 +1,31 @@
+{
+  "name": "dynamic-yield-affinity-integration",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reference Amplience schemas for Dynamic Yield affinity metadata.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amplience/dynamic-yield-affinity-integration.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amplience/dynamic-yield-affinity-integration/issues"
+  },
+  "homepage": "https://github.com/amplience/dynamic-yield-affinity-integration#readme",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=22 <23"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "npm run lint:format && npm run lint:markdown",
+    "lint:format": "prettier --check .",
+    "lint:markdown": "markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
+    "test": "node scripts/validate-repository.mjs && node --test"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "markdownlint-cli2": "0.23.2",
+    "prettier": "3.9.6"
+  }
+}

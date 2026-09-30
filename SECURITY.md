@@ -1,27 +1,27 @@
-# Security Policy
+# Security policy
 
-## Supported Versions
+## Supported versions
 
-| Version | Supported          |
-| ------- | ------------------ |
-| latest  | :white_check_mark: |
+Security updates are provided for the latest `0.1.x` release while that release
+line is maintained.
 
-## Reporting a Vulnerability
+## Reporting a vulnerability
 
-If you discover a security vulnerability, please report it responsibly:
+Do not open a public GitHub issue for a suspected vulnerability. Email
+[security@amplience.com](mailto:security@amplience.com) with:
 
-1. **Do not** open a public GitHub issue
-2. Email security@amplience.com with details of the vulnerability
-3. Include steps to reproduce the issue if possible
-4. Allow reasonable time for us to address the issue before public disclosure
+- A description of the issue and its potential impact.
+- Reproduction steps or a proof of concept, when available.
+- Any suggested mitigation.
 
-We aim to acknowledge receipt within 48 hours and provide a timeline for resolution.
+Allow reasonable time for investigation and remediation before public
+disclosure. Do not include credentials, personal data, or customer data unless
+the security team has provided an approved secure transfer method.
 
-## Security Best Practices
+## Contributor guidance
 
-When contributing to this repository:
-
-- Never commit secrets, API keys, or credentials
-- Keep dependencies up to date
-- Follow secure coding guidelines
-- Use signed commits where required
+- Never commit secrets, API keys, credentials, personal data, or private tenant
+  identifiers.
+- Keep development dependencies and GitHub Actions up to date.
+- Review new remote schema and extension dependencies before adding them.
+- Follow the repository's signed-commit requirements.

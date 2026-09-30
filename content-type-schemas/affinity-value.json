@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schema-examples.com/dynamic-yield-affinity-integration/affinity-value",
+  "title": "Dynamic Yield affinity value",
+  "description": "A selectable hierarchy leaf whose value can be matched to Dynamic Yield profile data.",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "trait:hierarchy": {
+    "childContentTypes": []
+  },
+  "type": "object",
+  "properties": {
+    "label": {
+      "title": "Label",
+      "description": "An author-facing name. This can change without changing the matching value.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "value": {
+      "title": "Value",
+      "description": "The stable machine value expected by the consuming integration. Match its spelling and case to the corresponding Dynamic Yield value.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    }
+  },
+  "required": ["label", "value"],
+  "propertyOrder": ["label", "value"]
+}
